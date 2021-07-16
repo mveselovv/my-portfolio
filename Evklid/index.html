@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Евклид - проектные решения любой сложности</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <script src="js/scripts.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script defer src="js/jquery-1.12.4.min.js"></script>
+    <script defer src="js/jquery-ui.min.js"></script>
+    <link rel="preload" src="fonts/Montserrat-Regular.woff2" as="font">
+    <link rel="preload" src="fonts/Montserrat-Bold.woff2" as="font">
+</head>
+<body>
+    <header class="header">
+      <div class="container">
+            <div class="header-container">
+            <a href="#" class="header-logo">
+                <img src="img/logotype.webp" alt="Логотип">
+            </a>
+            <div class="header-wrap">
+                    <nav class="header-list-wrap">
+                        <ul id="header-list" class="header-list">
+                            <li class="header-links">
+                                <a class="header-link" href="#">О нас</a>
+                            </li>
+                            <li class="header-links">
+                                <a class="header-link" href="#">Проекты</a>
+                            </li>
+                            <li class="header-links">
+                                <a class="header-link" href="#">Этапы</a>
+                            </li>
+                            <li class="header-links">
+                                <a class="header-link" href="#">Отзывы</a>
+                            </li>
+                            <li class="header-links">
+                                <a class="header-link" href="#">Контакты</a>
+                            </li>
+                            <li>
+                                <div class="burger-header-item">
+                                    <a href="#">
+                                        <img src="img/logotype.webp" alt="Logotype">
+                                        <p class="burger-copy">&#169; Все права защищены.</p>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <button aria-label="Поиск по странице" class="header-button-search">
+                            <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect x="18.5138" y="18.5495" width="8" height="2" transform="rotate(45 18.5138 18.5495)"
+                                fill="#333333" />
+                              <circle cx="11.5" cy="11.5" r="10.5" stroke="#333333" stroke-width="2" />
+                            </svg>
+                          </button>
+                            <button id="menu" aria-label="Навигация сайта" class="header-button-burger">
+                                <svg class="ham hamRotate ham1" viewBox="0 0 95 95" width="50" onclick="this.classList.toggle('active')">
+                                    <path
+                                          class="line top"
+                                          d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                                    <path
+                                          class="line middle"
+                                          d="m 30,50 h 40" />
+                                    <path
+                                          class="line bottom"
+                                          d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+                                  </svg>
+                          </button>
+                    </nav>
+                </div>
+        </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="section-hero">
+            <div class="container">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="hero-container">
+                            <div class="hero-container-wrap">
+                                <h1 class="section-hero-title">
+                                    Проектные решения любой сложности
+                                </h1>
+                                <p class="section-hero-discription">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</p>
+            
+                                <a role="button" href="#" class="btn section-hero-btn">Заказать расчёт</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="hero-container-build">
+                            <div class="hero-container-wrap">
+                                <h1 class="section-hero-title">
+                                    Проекты в любых городах
+                                </h1>
+                                <p class="section-hero-discription">Пилотные города. Переход к современным моделям городского развития уже начался — пилотные проекты разрабатываются в десятках городов.</p>
+            
+                                <a role="button" href="#" class="btn section-hero-btn">Посмотреть</a>
+                            </div>
+                        </div>
+                      </div>
+                        <div class="swiper-slide">
+                          <div class="hero-container-apart">
+                            <div class="hero-container-wrap">
+                                <h1 class="section-hero-title">
+                                    Прекрасные аппартаменты
+                                </h1>
+                                <p class="section-hero-discription">Потрясающие двухуровневые апартаменты расположены в престижной резиденции новой постройки в Куршевель Виллаж.</p>
+            
+                                <a role="button" href="#" class="btn section-hero-btn">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+            
+                  </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+      <section class="about">
+        <div class="container">
+          <h2 class="section-title">
+            О нас
+          </h2>
+          <p class="about-discription">
+            Также как перспективное планирование создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от того, что убеждённость некоторых оппонентов требует от нас анализа как самодостаточных, так и внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.
+					</p>
+				</div>
+        </section>
+      <section class="image-about">
+                <div class="container">
+                  <div class="section-about">
+                    <div class="about-image">
+                        <div class="about-image-discription">
+                            <div class="about-text">
+                                <p class="about-text-item">
+                                  Принимая во внимание показатели успешности, перспективное планирование способствует подготовке и реализации новых принципов.
+                                </p>
+                                <button class="about-btn">
+                                	Подробнее
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                  <div class="about-items">
+                    <div class="about-info">
+                        <div class="about-info-one">
+                            <img class="about-info-image" src="img/Group-25.svg" alt="Картинка к описанию">
+                            <div class="about-info-text">
+                            <h3 class="about-info-title">
+                            Консультация с широким активом
+                            </h3>
+                            <p class="about-info-discription">
+                            А также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для как самодостаточных, так и внешне зависимых концептуальных решений.
+                            </p>
+                        </div>
+                        </div>
+                	</div>
+                    <div class="about-info">
+                      <div class="about-info-one aboit-info-two">
+                        <img class="about-info-image-two" src="img/Group-24.svg" alt="Картинка к описанию">
+                        <div class="about-info-text">
+                        <h3 class="about-info-title">
+                          В своём стремлении повысить
+                        </h3>
+                        <p class="about-info-discription">
+                          Качество жизни, они забывают, что сплочённость команды профессионалов представляет собой интересный эксперимент проверки прогресса профессионального сообщества.
+                        </p>
+                    		</div>
+                    	</div>
+                		</div>
+                	</div>
+            			</div>
+          </div>
+      </section>
+      <section class="how-do-we-work">
+            <div class="container">
+                    <h2 class="section-title">
+            					Как мы работаем
+                    </h2>
+                    <div class="how-do-steps">
+                        <ul class="how-do-steps-list">
+                            <li class="how-do-steps-active">
+                            <a href="#" class="how-do-link-active">1 шаг</a>
+                            </li>
+                            <li class="how-do-steps-item">
+                            <a href="#" class="how-do-link">2 шаг</a>
+                            </li>
+                            <li class="how-do-steps-item">
+                            <a href="#" class="how-do-link">3 шаг</a>
+                            </li>
+                            <li class="how-do-steps-item">
+                            <a href="#" class="how-do-link">4 шаг</a>
+                            </li>
+                        </ul>
+                      </div>
+              <div class="section-how-do">
+                        <div class="how-do-consultation">
+                            <div class="how-do-text-item">
+                            <h3 class="how-do-title">
+                            	Проводим консультацию
+                            </h3>
+                            <p class="how-do-discription">
+                            	Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.
+                            </p>
+                            <div class="how-do-btn">
+                                <button class="how-do-btn-one">
+                                    Подробнее
+                                </button>
+                                <button class="how-do-btn-two">
+                                    Договор
+                                </button>
+                            </div>
+                        </div>
+                        </div>
+                        <div role="img" class="how-do-image"></div>
+                        </div>
+                    </div>
+      </section>
+      <section class="asked">
+                    <div class="container">
+                        <h2 class="section-title">
+                            Часто задаваемые вопросы
+                        </h2>
+                        <div class="container-asked">
+                        <div id="accordion">
+                            <div class="asked-items">
+                                <p class="asked-title">Из чего формируется конечная стоимость проекта?</p>
+                            </div>
+                            <div>
+                              <p class="asked-descr">
+                                Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.
+                            </p>
+                            <p class="asked-descr">
+                                Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. 
+                              </p>
+                            </div>
+                            <div class="asked-items">
+                                <p class="asked-title">У меня есть свой проект. Сможем ли мы его доработать / реализовать?</p>
+                            </div>
+                            <div>
+                              <p class="asked-descr">
+                              Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Рукопись большого лучше рекламных предложения страну себя наш дал текстов lorem грамматики семь, свое но, даже мир, залетают злых встретил?Осталось жизни вопроса снова решила оксмокс обеспечивает, домах алфавит которой маленький! Одна знаках семь грустный имеет! Ведущими, взгляд. Пустился его ведущими прямо путь маленькая знаках несколько толку парадигматическая меня жаренные.
+                              suscipit faucibus urna.
+                            </p>
+                              <p class="asked-descr">
+                                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Одна свой послушавшись взгляд путь букв семь ты приставка lorem. Большого запятых букв предупредила если буквоград назад курсивных последний предупреждал!
+                            </p>
+                            </div>
+                            <div class="asked-items">
+                               <p class="asked-title">Я выбираю между разными компаниями. В чём ваше отличие?</p>
+                            </div>
+                            <div>
+                                <p class="asked-descr">
+                                    Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Рукопись большого лучше рекламных предложения страну себя наш дал текстов lorem грамматики семь, свое но, даже мир, залетают злых встретил?Осталось жизни вопроса снова решила оксмокс обеспечивает, домах алфавит которой маленький! Одна знаках семь грустный имеет! Ведущими, взгляд. Пустился его ведущими прямо путь маленькая знаках несколько толку парадигматическая меня жаренные.
+                                    suscipit faucibus urna.
+                                  </p>
+                                    <p class="asked-descr">
+                                      Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Одна свой послушавшись взгляд путь букв семь ты приставка lorem. Большого запятых букв предупредила если буквоград назад курсивных последний предупреждал!
+                                  </p>
+                            </div>
+                            <div class="asked-items">
+                             <p class="asked-title">Могу ли я делегировать вам работу / согласование с подрядчиком / организацией?</p>
+                            </div>
+                            <div>
+                                <p class="asked-descr">
+                                    Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Рукопись большого лучше рекламных предложения страну себя наш дал текстов lorem грамматики семь, свое но, даже мир, залетают злых встретил?Осталось жизни вопроса снова решила оксмокс обеспечивает, домах алфавит которой маленький! Одна знаках семь грустный имеет! Ведущими, взгляд. Пустился его ведущими прямо путь маленькая знаках несколько толку парадигматическая меня жаренные.
+                                    suscipit faucibus urna.
+                                  </p>
+                                    <p class="asked-descr">
+                                      Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Одна свой послушавшись взгляд путь букв семь ты приставка lorem. Большого запятых букв предупредила если буквоград назад курсивных последний предупреждал!
+                                  </p>
+                            </div>
+                            <div class="asked-items">
+                                <p class="asked-title">Могу ли я вернуть деньги на каком-либо из этапов работ?</p>
+                            </div>
+                            <div>
+                                <p class="asked-descr">
+                                    Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Рукопись большого лучше рекламных предложения страну себя наш дал текстов lorem грамматики семь, свое но, даже мир, залетают злых встретил?Осталось жизни вопроса снова решила оксмокс обеспечивает, домах алфавит которой маленький! Одна знаках семь грустный имеет! Ведущими, взгляд. Пустился его ведущими прямо путь маленькая знаках несколько толку парадигматическая меня жаренные.
+                                    suscipit faucibus urna.
+                                  </p>
+                                    <p class="asked-descr">
+                                      Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Одна свой послушавшись взгляд путь букв семь ты приставка lorem. Большого запятых букв предупредила если буквоград назад курсивных последний предупреждал!
+                                  </p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+      </section>
+</main>
+<footer class="footer">
+            <div class="container">
+                <div class="footer-section">
+                <div class="footer-left">
+                    <a class="footer-logo" href="#">
+                    <img src="img/logotype-2.png" alt="Логотип">
+                    </a>
+                    <p class="footer-left-discription">
+                    Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели развития. Таким образом, консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании стандартных подходов.
+                    </p>
+                    <ul class="footer-nav-two">
+                        <li class="footer-nav-link-two">
+                            <a href="#" class="footer-link">
+                            О нас
+                            </a>
+                        </li>
+                        <li class="footer-nav-link">
+                            <a href="#" class="footer-link">
+                            Проекты
+                            </a>
+                        </li>
+                        <li class="footer-nav-link">
+                            <a href="#" class="footer-link">
+                            Отзывы
+                            </a>
+                        </li>
+                        <li class="footer-nav-link">
+                            <a href="#" class="footer-link">
+                            Договор оферты
+                            </a>
+                        </li>
+                        <li class="footer-nav-link">
+                            <a href="#" class="footer-link">
+                            Договор подряда
+                            </a>
+                        </li>
+                        <li class="footer-nav-link">
+                            <a href="#" class="footer-link">
+                            Конфиденциальность
+                            </a>
+                        </li>
+                        <li class="footer-nav-link">
+                            <a href="#" class="footer-link">
+                            Партнёрское соглашение
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="footer-left-social">
+                        <a href="#" class="social-facebook" title="Социальная сеть Фейсбук"></a>
+                        <a href="#" class="social-vkontakte" title="Социальная сеть Вконтакте"></a>
+                        <a href="#" class="social-instagram" title="Социальная сеть Инстаграм"></a>
+                    </div>
+                </div>
+                <div class="footer-center">
+                    <div class="footer-form">
+                        <h2 class="foter-form-title">
+                        Оставить заявку
+                        </h2>
+                        <form action="https://jsonplaceholder.typicode.com/posts" autocomplete method="POST" class="footer-form-item">
+                            <input required type="text" name="name" placeholder="Фамилия, имя и отчество*" class="footer-form-items">
+                            <input required type="tel" name="email" placeholder="E-mail*" class="footer-form-items">
+                            <textarea name="text" cols="30" rows="20" class="footer-form-text" placeholder="Сообщение"></textarea>
+                            <div class="footer-chekbox-items">
+                            <button type="submit" class="footer-form-btn">
+                                Отправить данные
+                            </button>
+                            <div class="footer-checkbox">
+                                <input required aria-checked="true" type="checkbox" id="cb1"> <label for="cb1">Согласен на обработку данных</label>
+                            </div>
+                        </div>
+                         </form>
+                         <div class="footer-logo-social">
+                             <a class="footer-logotype" href="#"></a>
+                         </div>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <a href="#" class="footer-right-logo"></a>
+                    <ul class="footer-nav">
+                        <li class="footer-nav-link">
+                            <a href="#" class="footer-link">
+                            О нас
+                            </a>
+                        </li>
+                        <li class="footer-nav-link">
+                            <a href="#" class="footer-link">
+                            Проекты
+                            </a>
+                        </li>
+                        <li class="footer-nav-link">
+                            <a href="#" class="footer-link">
+                            Отзывы
+                            </a>
+                        </li>
+                        <li class="footer-nav-link">
+                            <a href="#" class="footer-link">
+                            Договор оферты
+                            </a>
+                        </li>
+                        <li class="footer-nav-link">
+                            <a href="#" class="footer-link">
+                            Договор подряда
+                            </a>
+                        </li>
+                        <li class="footer-nav-link">
+                            <a href="#" class="footer-link">
+                            Конфиденциальность
+                            </a>
+                        </li>
+                        <li class="footer-nav-link">
+                            <a href="#" class="footer-link">
+                            Партнёрское соглашение
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="footer-social">
+                        <a href="#" class="social-fb"></a>
+                        <a href="#" class="social-vk"></a>
+                        <a href="#" class="social-inst"></a>
+                    </div>
+                </div>
+						</div>
+					</div>
+        </footer>
+</body>
+</html>
