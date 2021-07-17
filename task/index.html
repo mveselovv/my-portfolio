@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/lang.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
     </style>
@@ -25,19 +27,23 @@
                     <button class="burger__closed"></button>
                     <ul class="header-list__item">
                         <li class="header-list__items">
-                            <a class="header-list__link" href="#">Физическим лицам</a>
+                            <a class="header-list__link" href="#" data-en="Private" data-ru="Физическим лицам">Физическим лицам</a>
                         </li>
                         <li class="header-list__items">
-                            <a class="header-list__link" href="#">Предприятиям</a>
+                            <a class="header-list__link" href="#" data-en="Business" data-ru="Предприятиям">Предприятиям</a>
                         </li>
                         <li class="header-list__items">
-                            <a class="header-list__link" href="#">Инвестиции</a>
+                            <a class="header-list__link" href="#" data-en="Investments" data-ru="Инвестиции">Инвестиции</a>
                         </li>
                         <li class="header-list__items">
-                            <a class="header-list__link" href="#">Блог</a>
+                            <a class="header-list__link" href="#" data-en="Blog" data-ru="Блог">Блог</a>
                         </li>
                         <li class="header-list__items">
-                            <a class="header-list__link" href="#">О компании</a>
+                            <a class="header-list__link" href="#" data-en="About" data-ru="О компании">О компании</a>
+                        </li>
+                        <li class="header-list__items">
+                            <button class="ru"></button>
+                            <button class="en"></button>
                         </li>
                     </ul>
                 </nav>
@@ -50,13 +56,13 @@
             <div class="header-content">
                 <img class="header-content__image" src="image/header-image.png" alt="Финакадемия">
                 <div class="header-content__information">
-                    <h1 class="header-content__title">
+                    <h1 class="header-content__title" data-en="Finakademiya" data-ru="Финакадемия">
                         Финакадемия
                     </h1>
-                    <p class="header-content__discription">
+                    <p class="header-content__discription" data-en="Consulting company specializing in providing organizations and individuals with financial services as an aggregator." data-ru="Консалтинговая компания, специализирующаяся на предоставлении организациям и частным лицам финансовых услуг в качестве агрегатора.">
                         Консалтинговая компания, специализирующаяся на предоставлении организациям и частным лицам финансовых услуг в качестве агрегатора.
                     </p>
-                    <span class="header-content__short">
+                    <span class="header-content__short" data-en="Optimal Financial Solutions Generator" data-ru="Генератор оптимальных финансовых решений">
                         Генератор оптимальных финансовых решений
                     </span>
                 </div>
@@ -66,49 +72,49 @@
     <main class="main">
         <section class="team">
             <div class="container">
-                <h2 class="section__title">
+                <h2 class="section__title" data-en="Our team" data-ru="Наша команда">
                     Наша команда
                 </h2>
                 <ul class="team-list">
                     <li class="team-list__items">
                         <img class="team-list__images" src="image/team.jpg" alt="Наша команда">
-                        <span class="team-list__name">Евгений Орлов</span>
-                        <span class="team-list__position">Директор компании</span>
+                        <span class="team-list__name" data-en="Evgeniy Orlov" data-ru="Евгений Орлов">Евгений Орлов</span>
+                        <span class="team-list__position" data-en="Director of the company" data-ru="Директор компании">Директор компании</span>
                     </li>
                     <li class="team-list__items">
                         <img class="team-list__images" src="image/team2.jpg" alt="Наша команда">
-                        <span class="team-list__name">Дмитрий Носков</span>
-                        <span class="team-list__position">Отдел по продажам</span>
+                        <span class="team-list__name" data-en="Dmitry Noskov" data-ru="Дмитрий Носков">Дмитрий Носков</span>
+                        <span class="team-list__position" data-en="Sales department" data-ru="Отдел по продажам">Отдел по продажам</span>
                     </li>
                     <li class="team-list__items">
                         <img class="team-list__images" src="image/team3.jpg" alt="Наша команда">
-                        <span class="team-list__name">Андрей Вострецов</span>
-                        <span class="team-list__position">Специалист по клиентам</span>
+                        <span class="team-list__name" data-en="Andrey Vostrecov" data-ru="Андрей Вострецов">Андрей Вострецов</span>
+                        <span class="team-list__position" data-en="Client Specialist" data-ru="Специалист по клиентам">Специалист по клиентам</span>
                     </li>
                     <li class="team-list__items">
                         <img class="team-list__images" src="image/team4.jpg" alt="Наша команда">
-                        <span class="team-list__name">Олег Вострецов</span>
-                        <span class="team-list__position">Отдел кадров</span>
+                        <span class="team-list__name" data-en="Oleg Vostrecov" data-ru="Олег Вострецов">Олег Вострецов</span>
+                        <span class="team-list__position" data-en="Human Resources Department" data-ru="Отдел кадров">Отдел кадров</span>
                     </li>
                     <li class="team-list__items">
                         <img class="team-list__images" src="image/team5.jpg" alt="Наша команда">
-                        <span class="team-list__name">Мария Василевская</span>
-                        <span class="team-list__position">Маркетинг</span>
+                        <span class="team-list__name" data-en="Mariya Vasilevskaya" data-ru="Мария Василевская">Мария Василевская</span>
+                        <span class="team-list__position" data-en="Marketing" data-ru="Маркетинг">Маркетинг</span>
                     </li>
                     <li class="team-list__items">
                         <img class="team-list__images" src="image/team6.jpg" alt="Наша команда">
-                        <span class="team-list__name">Анастасия Уликова</span>
-                        <span class="team-list__position">Маркетинг</span>
+                        <span class="team-list__name" data-en="Anastasiya Ulikova" data-ru="Анастасия Уликова">Анастасия Уликова</span>
+                        <span class="team-list__position" data-en="Marketing" data-ru="Маркетинг">Маркетинг</span>
                     </li>
                 </ul>
             </div>
         </section>
         <section class="mission">
             <div class="container">
-            <h2 class="section__title">
+            <h2 class="section__title" data-en="Our mission" data-ru="Наша миссия">
                 Наша миссия
             </h2>
-            <p class="mission__discription">
+            <p class="mission__discription" data-en="Provide easy and convenient access for everyone to any financial product in any market" data-ru="Обеспечить простой и удобный доступ всем желающим к любому финансовому продукту на любом рынке.">
                 Обеспечить простой и удобный доступ всем желающим к любому финансовому продукту на любом рынке.
             </p>
         </div>
@@ -117,30 +123,30 @@
             <div class="container">
                 <ul class="working-list">
                     <li class="working-list__item">
-                        <h2 class="section__title section__working">Наши принципы</h2>
+                        <h2 class="section__title section__working" data-en="Our princeples" data-ru="Наши принципы">Наши принципы</h2>
                         <ul class="working-list__first">
-                            <li class="working-list__name">Открытость</li>
-                            <li class="working-list__name">Ответственность</li>
-                            <li class="working-list__name">Индивидуальный подход</li>
+                            <li class="working-list__name" data-en="Openness" data-ru="Открытость">Открытость</li>
+                            <li class="working-list__name" data-en="Responsibility" data-ru="Ответственность">Ответственность</li>
+                            <li class="working-list__name" data-en="Individual approach" data-ru="Индивидуальный подход">Индивидуальный подход</li>
                         </ul>
-                        <button class="main__btn">Подобрнее</button>
+                        <button class="main__btn" data-en="Meet us" data-ru="Подобрнее">Подробнее</button>
                     </li>
                     <li class="working-list__item">
-                        <h2 class="section__title section__working">Наши ценности</h2>
-                        <p class="working-list__discription">Важнейшая ценность для нас - это наши клиенты. Их интересы, потребности, их развитие и рост — залог нашего успеха</p>
-                        <button class="main__btn">Подобрнее</button>
+                        <h2 class="section__title section__working" data-en="Our values" data-ru="Наши ценности">Наши ценности</h2>
+                        <p class="working-list__discription" data-en="Most important value for us is our customers. Their interests, their needs, their development and growth are the key to our success" data-ru="Важнейшая ценность для нас - это наши клиенты. Их интересы, потребности, их развитие и рост — залог нашего успеха">Важнейшая ценность для нас - это наши клиенты. Их интересы, потребности, их развитие и рост — залог нашего успеха</p>
+                       <button class="main__btn" data-en="Meet us" data-ru="Подобрнее">Подробнее</button>
                     </li>
                     <li class="working-list__item">
-                        <h2 class="section__title section__working">Наши команда</h2>
-                        <p class="working-list__discription">В команде ООО "ФИНАКАДЕМИЯ" собрались как профессионалы с многолетним опытом работы на банковском и финансовом рынке, так и молодые перспективные специалисты.</p>
-                        <button class="main__btn">Подобрнее</button>
+                        <h2 class="section__title section__working" data-en="Our team" data-ru="Наши команда">Наши команда</h2>
+                        <p class="working-list__discription" data-en="The FINAKADEMIA LLC team includes professionals with many years of experience in the banking and financial market, as well as young promising specialists." data-ru="В команде ООО ФИНАКАДЕМИЯ собрались как профессионалы с многолетним опытом работы на банковском и финансовом рынке, так и молодые перспективные специалисты.">В команде ООО "ФИНАКАДЕМИЯ" собрались как профессионалы с многолетним опытом работы на банковском и финансовом рынке, так и молодые перспективные специалисты.</p>
+                       <button class="main__btn" data-en="Meet us" data-ru="Подобрнее">Подробнее</button>
                     </li>
                 </ul>
             </div>
         </section>
         <section class="partner">
             <div class="container partner__contein">
-                <h2 class="section__title">
+                <h2 class="section__title" data-en="Our partners" data-ru="Наши партнеры">
                     Наши партнеры
                 </h2>
                 <div class="swiper-buttons">
@@ -154,43 +160,43 @@
                         <button class="partner-list__link">
                             <img class="partner-list__image" src="image/partner1.jpg" alt="Freedom Finance">
                         </button>
-                        <span class="partner-link__info">Депозиты, кредитование</span>
-                        <span class="partner-link__info">Инвестирование, валютные операции</span>
+                        <span class="partner-link__info" data-en="Deposits, crediting" data-ru="Депозиты, кредитование">Депозиты, кредитование</span>
+                        <span class="partner-link__info" data-en="Investing, currency operations" data-ru="Инвестирование, валютные операции">Инвестирование, валютные операции</span>
                     </li>
                     <li class="partner-list__content swiper-slide">
                         <button class="partner-list__link">
                             <img class="partner-list__image" src="image/partner2.png" alt="Альфа Банк">
                         </button>
-                        <span class="partner-link__info">Кредитование бизнеса под льготный процент</span>
-                        <span class="partner-link__info">Инвестирование, валютные операции</span>
+                        <span class="partner-link__info"  data-en="Lending to businesses at preferential interest rates" data-ru="Кредитование бизнеса под льготный процент">Кредитование бизнеса под льготный процент</span>
+                        <span class="partner-link__info" data-en="Investing, currency operations" data-ru="Инвестирование, валютные операции">Инвестирование, валютные операции</span>
                     </li>
                     <li class="partner-list__content swiper-slide">
                         <button class="partner-list__link">
                             <img class="partner-list__image" src="image/partner3.jpg" alt="Севергазбанк">
                         </button>
-                        <span class="partner-link__info">Банковские гарантии</span>
-                        <span class="partner-link__info">Инвестирование, валютные операции</span>
+                        <span class="partner-link__info" data-en="Bank guarantees" data-ru="Банковские гарантии">Банковские гарантии</span>
+                        <span class="partner-link__info" data-en="Investing, currency operations" data-ru="Инвестирование, валютные операции">Инвестирование, валютные операции</span>
                     </li>
                     <li class="partner-list__content swiper-slide">
                         <button class="partner-list__link">
                             <img class="partner-list__image" src="image/partner1.jpg" alt="Freedom Finance">
                         </button>
-                        <span class="partner-link__info">Депозиты, кредитование</span>
-                        <span class="partner-link__info">Инвестирование, валютные операции</span>
+                        <span class="partner-link__info" data-en="Deposits, crediting" data-ru="Депозиты, кредитование">Депозиты, кредитование</span>
+                        <span class="partner-link__info" data-en="Investing, currency operations" data-ru="Инвестирование, валютные операции">Инвестирование, валютные операции</span>
                     </li>
                     <li class="partner-list__content swiper-slide">
                         <button class="partner-list__link">
                             <img class="partner-list__image" src="image/partner2.png" alt="Альфа Банк">
                         </button>
-                        <span class="partner-link__info">Кредитование бизнеса под льготный процент</span>
-                        <span class="partner-link__info">Инвестирование, валютные операции</span>
+                        <span class="partner-link__info" data-en="Lending to businesses at preferential interest rates" data-ru="Кредитование бизнеса под льготный процент">Кредитование бизнеса под льготный процент</span>
+                        <span class="partner-link__info" data-en="Investing, currency operations" data-ru="Инвестирование, валютные операции">Инвестирование, валютные операции</span>
                     </li>
                     <li class="partner-list__content swiper-slide">
                         <button class="partner-list__link">
                             <img class="partner-list__image" src="image/partner3.jpg" alt="Севергазбанк">
                         </button>
-                        <span class="partner-link__info">Банковские гарантии</span>
-                        <span class="partner-link__info">Инвестирование, валютные операции</span>
+                        <span class="partner-link__info" data-en="Bank guarantees" data-ru="Банковские гарантии">Банковские гарантии</span>
+                        <span class="partner-link__info" data-en="Investing, currency operations" data-ru="Инвестирование, валютные операции">Инвестирование, валютные операции</span>
                     </li>
                 </div>
                 </ul>
@@ -198,7 +204,7 @@
         </section>
         <section class="products">
             <div class="container container__product">
-                <h2 class="section__title">Наши продукты</h2>
+                <h2 class="section__title" data-en="Our products" data-ru="Наши продукты">Наши продукты</h2>
                 <div class="swiper-buttons">
                 <div class="swiper-product-next"></div>
                 <div class="pagination-product"></div>
@@ -207,24 +213,24 @@
                 <ul class="products-list swiper-container">
                     <div class="swiper-wrapper">
                     <li class="products-list__item swiper-slide">
-                        <h3 class="products-list__title">Участие в IPO</h3>
-                        <span class="products-list__info">Без статуса квалифицированного инвестора</span>
-                        <button class="main__btn product__btn">Узнать подробнее</button>
+                        <h3 class="products-list__title" data-en="IPO participation" data-ru="Участие в IPO">Участие в IPO</h3>
+                        <span class="products-list__info" data-en="Without qualified investor status" data-ru="Без статуса квалифицированного инвестора">Без статуса квалифицированного инвестора</span>
+                        <button class="main__btn product__btn" data-en="Meet us" data-ru="Подобрнее">Подобрнее</button>
                     </li>
                     <li class="products-list__item swiper-slide">
-                        <h3 class="products-list__title">Кредит для бизнеса 6% годовых</h3>
-                        <span class="products-list__info">от 50 млн. рублей сроком до 15 лет</span>
-                        <button class="main__btn product__btn">Узнать подробнее</button>
+                        <h3 class="products-list__title" data-en="Loan for business 6% per annum" data-ru="Кредит для бизнеса 6% годовых">Кредит для бизнеса 6% годовых</h3>
+                        <span class="products-list__info" data-en="from 50 million rubles for up to 15 years" data-ru="от 50 млн. рублей сроком до 15 лет">от 50 млн. рублей сроком до 15 лет</span>
+                          <button class="main__btn product__btn" data-en="Meet us" data-ru="Подобрнее">Подобрнее</button>
                     </li>
                     <li class="products-list__item swiper-slide">
-                        <h3 class="products-list__title">Кредит для бизнеса 6% годовых</h3>
-                        <span class="products-list__info">от 50 млн. рублей сроком до 15 лет</span>
-                        <button class="main__btn product__btn">Узнать подробнее</button>
+                         <h3 class="products-list__title" data-en="Loan for business 6% per annum" data-ru="Кредит для бизнеса 6% годовых">Кредит для бизнеса 6% годовых</h3>
+                        <span class="products-list__info" data-en="from 50 million rubles for up to 15 years" data-ru="от 50 млн. рублей сроком до 15 лет">от 50 млн. рублей сроком до 15 лет</span>
+                          <button class="main__btn product__btn" data-en="Meet us" data-ru="Подобрнее">Подобрнее</button>
                     </li>
                     <li class="products-list__item swiper-slide">
-                        <h3 class="products-list__title">Кредит для бизнеса 6% годовых</h3>
-                        <span class="products-list__info">от 50 млн. рублей сроком до 15 лет</span>
-                        <button class="main__btn product__btn">Узнать подробнее</button>
+                         <h3 class="products-list__title" data-en="Loan for business 6% per annum" data-ru="Кредит для бизнеса 6% годовых">Кредит для бизнеса 6% годовых</h3>
+                        <span class="products-list__info" data-en="from 50 million rubles for up to 15 years" data-ru="от 50 млн. рублей сроком до 15 лет">от 50 млн. рублей сроком до 15 лет</span>
+                          <button class="main__btn product__btn" data-en="Meet us" data-ru="Подобрнее">Подобрнее</button>
                     </li>
                 </div>
                 </ul>
@@ -232,32 +238,32 @@
         </section>
         <section class="news">
             <div class="container">
-            <h2 class="section__title">Новости</h2>
+            <h2 class="section__title" data-en="News" data-ru="Новости">Новости</h2>
             <ul class="news-list">
                 <li class="news-list__block">
                     <img src="image/news1.jpg" alt="Facebook и Instagram вложат более $1 млрд">
-                    <a href="#" class="partner-list__title">
+                    <a href="#" class="partner-list__title" data-en="Facebook and Instagram will invest more than $1 billion in content creators" data-ru="Facebook и Instagram вложат более $1 млрд в создателей контента">
                         Facebook и Instagram вложат более $1 млрд в создателей контента
                     </a>
-                    <p class="news-list__discription">
+                    <p class="news-list__discription" data-en="The first program will reward content creators on Instagram's short video service Reels" data-ru="Первая программа будет поощрять авторов контента в сервисе коротких видео Reels в Instagram.">
                         Первая программа будет поощрять авторов контента в сервисе коротких видео Reels в Instagram.
                     </p>
                 </li>
                 <li class="news-list__block">
                     <img src="image/news2.jpg" alt="Karma - краудлендинговая платформа">
-                    <a href="#" class="partner-list__title">
+                    <a href="#" class="partner-list__title" data-en="Karma - crowdsourcing platform" data-ru="Karma - краудлендинговая платформа">
                         Karma - краудлендинговая платформа
                     </a>
-                    <p class="news-list__discription">
+                    <p class="news-list__discription" data-en="A platform on which you can raise capital and investment" data-ru=" Платформа, на которой можно приунможить свой капитал и привлечь инвестиции">
                         Платформа, на которой можно приунможить свой капитал и привлечь инвестиции
                     </p>
                 </li>
                 <li class="news-list__block">
                     <img src="image/news3.jpg" alt="Пресс релиз Регионы - устойчивое развитие">
-                    <a href="#" class="partner-list__title">
+                    <a href="#" class="partner-list__title" data-en="Press release Regiony - Ustoychivoe Razvitie" data-ru="Пресс релиз Регионы - устойчивое развитие">
                         Пресс релиз "Регионы - устойчивое развитие"
                     </a>
-                    <p class="news-list__discription">
+                    <p class="news-list__discription" data-en="All-Russian competition on the program of state support" data-ru="Всероссийский конкурс по программе господдержки">
                         Всероссийский конкурс по программе господдержки
                     </p>
                 </li>
@@ -272,10 +278,10 @@
                 <a class="social-media__instagram" href="#"></a>
             </div>
             <div class="concts-us">
-                <a href="tel:+74951282028">+7 (495) 128 - 20 - 28</a>
-                <a href="mail:info@finakademiya.ru">info@finakademiya.ru</a>
+                <a href="tel:+74951282028" >+7 (495) 128 - 20 - 28</a>
+                <a href="mailto::info@finakademiya.ru">info@finakademiya.ru</a>
             </div>
-            <span class="company-name">© 2021 ФИНАКАДЕМИЯ</span>
+            <span class="company-name" data-en="Finakademiya LLC" data-ru="© 2021 ФИНАКАДЕМИЯ">© 2021 ФИНАКАДЕМИЯ</span>
         </div>
     </footer>
 </body>

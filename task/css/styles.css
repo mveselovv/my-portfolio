@@ -32,6 +32,27 @@ ul, li {
   padding: 0;
 }
 
+.ru {
+  width: 20px;
+  height: 20px;
+  background-image: url('../image/russia.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: 0;
+  margin-right: 10px;
+}
+
+.en {
+  width: 20px;
+  height: 20px;
+  background-image: url('../image/united-kingdom.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: 0;
+}
+
 img {
   max-width: 100%;
 }
@@ -112,6 +133,7 @@ button {
 .header-list__item {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header-list__link {
@@ -294,6 +316,7 @@ button {
 }
 
 .partner-list__link {
+  background-color: transparent;
   padding: 0;
   height: 172px;
   border: 0;
@@ -383,8 +406,8 @@ button {
 
 .partner-link__info {
   line-height: 28px;
-  background-color: #f5f5f5;
   padding: 5px 5px;
+  font-weight: 500;
   border-bottom: 1px solid #333;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
